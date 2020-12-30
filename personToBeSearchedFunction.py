@@ -40,5 +40,3 @@ mutualsList = customSort(mutualsList) #sort mutuals list
 			return true
 	chain.remove(User)
 	return false
-
-findSomeone(User1);
