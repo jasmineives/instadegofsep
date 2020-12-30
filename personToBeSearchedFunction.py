@@ -18,7 +18,7 @@ def findSomeone(User):
 	chain.append(User)
 	
         #grab mutual followers of User1 --must be public account or your "own" from login credentials
-        mutualsList = session.pick_mutual_following(username= User1, live_match=True, store_locally=True)
+        mutualsList = session.pick_mutual_following(username= User, live_match=True, store_locally=True)
         
         #check each user in mutuals list for two conditions
 	for user in mutualsList:
@@ -40,3 +40,5 @@ mutualsList = customSort(mutualsList) #sort mutuals list
 			return true
 	chain.remove(User)
 	return false
+
+findSomeone(User1);
